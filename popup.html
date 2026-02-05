@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMS to GEE Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DMS to GEE Converter</h1>
+
+    <div class="input-group">
+      <label for="dms-input">Enter Coordinates:</label>
+      <input
+        type="text"
+        id="dms-input"
+        placeholder="DMS or Decimal: 44°36'30&quot;N 7°31'17&quot;E or 45.202937, 9.137242"
+        autocomplete="off"
+      >
+      <span class="hint">DMS: 44°36'30"N 7°31'17"E | Decimal (Google Maps): 45.202937, 9.137242</span>
+    </div>
+
+    <button id="convert-btn">Convert & Copy</button>
+
+    <div id="result-section" class="result-section hidden">
+      <label>GEE Format:</label>
+      <code id="result-output"></code>
+    </div>
+
+    <div id="success-message" class="success-message hidden">
+      <span class="checkmark">✓</span> Copied to clipboard!
+    </div>
+
+    <div id="error-message" class="error-message hidden">
+      <span class="error-icon">✗</span> <span id="error-text"></span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
