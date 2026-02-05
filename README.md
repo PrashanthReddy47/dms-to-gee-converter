@@ -88,7 +88,7 @@ Built during rice paddy mapping research at University of Pavia. Field collabora
    - Click pin icon
 
 ### Chrome Web Store
-*Not currently published (see [Why?](#why-not-chrome-web-store))*
+*Not currently published*
 
 ---
 
